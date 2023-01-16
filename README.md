@@ -386,7 +386,7 @@ impl<'d1> List<'d1> {
 
 Not surprisingly, we get both `'d1 : 'c3` and `'c3 : 'd1`, which implies `'d1 = 'c3`. This follows from the *antisymmetric* property of `:`, property everyone is very familiar with:
 
-* `(num1 <= num2 and num2 <= num1) implies num1 = num2
+* (num1 <= num2 and num2 <= num1) implies num1 = num2
 
 Let's keep going:
 
