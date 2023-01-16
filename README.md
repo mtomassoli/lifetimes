@@ -4,7 +4,7 @@ After having played a little with [*GATs* and *HKTs*](https://github.com/mtomass
 
 Now I have a question and no time to try to answer it on my own, as my 7-day adventure with Rust is sadly coming to an end :(
 
-My initial intention was just to ask my question, but I ended up writing a full-fledged article. To make it more self-contained, I even decided to put to words my understanding of lifetimes since it might help other beginners.
+My initial intention was just to ask my question, but I ended up writing a full-fledged article. To make it more self-contained, I even decided to put into words my understanding of lifetimes since it might help other beginners.
 
 I think annotating *lifetimes* is the hardest part for a newcomer to Rust.
 
