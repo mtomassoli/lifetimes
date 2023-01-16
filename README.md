@@ -104,12 +104,24 @@ Here are a few (abstract) examples, where I'll assume `Dog : Animal` and `'long 
   * *invariant* in `T` ***if read-write***:
     * it would need to be both *covariant* and *contravariant*, which is impossible.
 * References `&'a T` and `&'a mut T` are both
-  * *covariant* in `'a`, *by definition*:
-    * a `&'a (mut) T` is what we called "an `'a`"!
+  * *covariant* in `'a`:
+    * a `&'a (mut) T` is exactly what we called "an `'a`",
+      * so the covariance follows trivially, *by definition*!
+    * But let's reiterate:
+      * The surrounding code of a `&'short (mut) T` only accesses the reference during `'short`.
+      * Since `'long` includes `'short`:
+        * a `&'long (mut) T` is also valid during `'short`,
+        * which means a `&'long (mut) T` can replace a `&'short (mut) T`.
 * A reference `&'a T` is
   * *covariant* in `T` for the same reasons a ***read-only*** container is.
+  * The surrounding code of an `&'a Animal` expects to read an `Animal` through the reference,
+  * and a `&'a Dog` references `Dog`s, which are `Animal`s,
+  * so a `&'a Dog` can replace an `&'a Animal`.
 * A reference `&'a mut T` is
   * *invariant* in `T` for the same reasons a ***read-write*** container is.
+  * Reading through the reference requires *covariance*, and
+  * writing through it requires *contravariance*,
+  * which are incompatible, so we get *invariance*.
 
 Note that `T` can very well contain lifetime annotations. For instance:
 
