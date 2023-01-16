@@ -477,7 +477,7 @@ Please let me know what you think, since I'm curious about this.
 
 ---
 
-This post will conclude my (hopefully first but not last) adventure with Rust.
+This post concludes my (hopefully first but not last) adventure with Rust.
 I think Rust is a wonderful language and I like how one can talk about the more technical aspects of the language on [r/rust](https://www.reddit.com/r/rust). That's not always the case with other languages. I suspect that when a language becomes very popular, the forums get flooded with people that just want to get things done and don't have time to "waste" talking about more theoretical stuff. It'll happen to [r/rust](https://www.reddit.com/r/rust) as well! :)
 
 Happy coding!
